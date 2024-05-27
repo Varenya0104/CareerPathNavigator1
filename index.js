@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
-// Add this after the other middleware
+
 const careerPathsRouter = require('./routes/careerPaths');
 app.use('/careerPaths', careerPathsRouter);
 
